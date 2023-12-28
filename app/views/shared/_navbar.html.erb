@@ -15,7 +15,7 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="#">Failed</a>
+          <%= link_to "Jobs", jobs_path, class: class_names("nav-link", "active": current_page?(jobs_path)) %>
         </li>
       </ul>
     </div>

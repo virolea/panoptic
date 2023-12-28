@@ -1,0 +1,28 @@
+<h1>Jobs</h1>
+
+<div class="d-flex justify-content-end">
+  <div>
+    <%= page_entries_info @jobs %>
+  </div>
+</div>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Class</th>
+      <th scope="col">Queue</th>
+      <th scope="col">Arguments</th>
+      <th scope="col">Scheduled at</th>
+      <th scope="col">Finished at</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <%= render partial: "job", collection: @jobs %>  
+  </tbody>
+</table>
+
+<div class="d-flex justify-content-center">
+  <%= paginate @jobs, views_prefix: "panoptic" %>
+</div>
