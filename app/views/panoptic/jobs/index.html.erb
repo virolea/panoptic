@@ -1,9 +1,7 @@
 <h1>Jobs</h1>
 
 <div class="d-flex justify-content-end">
-  <div>
-    <%= page_entries_info @jobs %>
-  </div>
+  <%== pagy_info(@pagy)  %> 
 </div>
 
 <table class="table">
@@ -24,5 +22,5 @@
 </table>
 
 <div class="d-flex justify-content-center">
-  <%= paginate @jobs, views_prefix: "panoptic" %>
+  <%== pagy_bootstrap_nav(@pagy) if @pagy.pages > 1 %>
 </div>

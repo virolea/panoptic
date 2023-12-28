@@ -20,5 +20,5 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "rails", "~> 7.1"
   spec.add_dependency "solid_queue", "~> 0.1"
-  spec.add_dependency "kaminari", "~> 1.2"
+  spec.add_dependency "pagy", "~> 6.2"
 end

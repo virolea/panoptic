@@ -6,7 +6,6 @@ require "rails/all"
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 require "solid_queue"
-require "kaminari"
 
 module Dummy
   class Application < Rails::Application

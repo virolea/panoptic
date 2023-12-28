@@ -2,8 +2,10 @@
 
 module Panoptic
   class JobsController < ApplicationController
+    include Pagy::Backend
+
     def index
-      @jobs = SolidQueue::Job.order(created_at: :asc).page(params[:page])
+      @pagy, @jobs = pagy(SolidQueue::Job.order(created_at: :asc))
     end
   end
 end
