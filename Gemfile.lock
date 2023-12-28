@@ -3,7 +3,7 @@ PATH
   specs:
     panoptic (0.1.0)
       kaminari (~> 1.2)
-      rails (>= 7.1)
+      rails (~> 7.1)
       solid_queue (~> 0.1)
 
 GEM
