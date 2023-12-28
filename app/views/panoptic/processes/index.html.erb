@@ -1,0 +1,15 @@
+<h1>Processes</h1>
+
+<div class="d-grid gap-3">
+  <% @hosts.each do |host| %>
+    <div class="card">
+      <div class="card-header">
+        <b>Host:</b> <%= host.hostname %>
+      </div>
+      
+      <ul class="list-group list-group-flush">
+        <%= render partial: "process", collection: host.forks %>
+      </ul>
+    </div>
+  <% end %>
+</div>

@@ -1,0 +1,23 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <%= link_to "Panoptic", root_path, class: "navbar-brand" %>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <%= link_to "Processes", root_path, class: class_names("nav-link", "active": current_page?(root_path)) %>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Scheduled</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Failed</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
