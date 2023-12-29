@@ -1,5 +1,7 @@
 # Panoptic
 
+[![Gem Version](https://badge.fury.io/rb/panoptic.svg)](https://badge.fury.io/rb/panoptic)
+
 Panoptic is a web interface for the [SolidQueue](https://github.com/basecamp/solid_queue) queuing backend.
 
 ![](./images/demo.png)
