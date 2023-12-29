@@ -2,7 +2,6 @@
   <th scope="row"><%= job.id %></th>
   <td scope="col"><%= job.class_name %></td>
   <td scope="col"><%= job.queue_name %></td>
-  <td scope="col"><%= job.arguments %></td>
-  <td scope="col"><% job.scheduled_at %></td>
-  <td scope="col"><% job.finished_at %></td>
+  <td scope="col"><%= safe_time_tag job.scheduled_at %></td>
+  <td scope="col"><%= safe_time_tag job.finished_at %></td>
 </tr>
