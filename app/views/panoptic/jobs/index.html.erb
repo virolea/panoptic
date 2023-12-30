@@ -5,6 +5,9 @@
     <%= link_to "All", jobs_path, class: class_names("nav-link", "active": current_page?(jobs_path)) %>
   </li>
   <li class="nav-item">
+    <%= link_to "Scheduled", scheduled_jobs_path, class: class_names("nav-link", "active": current_page?(scheduled_jobs_path)) %>
+  </li>
+  <li class="nav-item">
     <%= link_to "Failed", failed_jobs_path, class: class_names("nav-link", "active": current_page?(failed_jobs_path)) %>
   </li>
 </ul>
