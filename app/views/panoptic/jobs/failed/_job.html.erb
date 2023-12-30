@@ -1,0 +1,10 @@
+<tr>
+  <th scope="row"><%= job.id %></th>
+  <td scope="col"><%= job.class_name %></td>
+  <td scope="col"><%= job.queue_name %></td>
+  <td scope="col" class="font-monospace"><%= job.exception_class %></td>
+  <td scope="col"><%= safe_time_tag job.enqueued_at %></td>
+  <td scope="col">
+    <%= link_to "Details", failed_job_path(job) %>
+  </td>
+</tr>

@@ -2,13 +2,16 @@
 
 module Panoptic
   class Jobs::FailedController < ApplicationController
-    def index
-      # TODO: use the `failed` scope available in SolidQueue next release
-      @pagy, @jobs = pagy(
-        SolidQueue::Job.joins(:failed_execution).order(created_at: :asc)
-      )
+    layout "panoptic/jobs", only: :index
 
-      render "panoptic/jobs/index"
+    def index
+      @pagy, @jobs = pagy(
+        Panoptic::FailedJob.order(created_at: :asc)
+      )
+    end
+
+    def show
+      @job = Panoptic::FailedJob.find(params[:id])
     end
   end
 end

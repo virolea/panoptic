@@ -4,12 +4,13 @@
       <th scope="col">#</th>
       <th scope="col">Class</th>
       <th scope="col">Queue</th>
-      <th scope="col">Scheduled</th>
-      <th scope="col">Finished</th>
+      <th scope="col">Exception</th>
+      <th scope="col">Enqueued</th>
+      <th scope="col"></th>
     </tr>
   </thead>
 
   <tbody>
-    <%= render partial: "panoptic/jobs/job", collection: @jobs %>  
+    <%= render partial: "job", collection: @jobs %>  
   </tbody>
 </table>

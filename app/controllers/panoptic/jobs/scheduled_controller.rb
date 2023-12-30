@@ -2,6 +2,8 @@
 
 module Panoptic
   class Jobs::ScheduledController < ApplicationController
+    layout "panoptic/jobs"
+
     def index
       # TODO: use the `scheduled` scope available in SolidQueue next release
       @pagy, @jobs = pagy(

@@ -1,0 +1,24 @@
+<% breadcrumb_items.push link_to("Jobs", jobs_path) %>
+<% breadcrumb_items.push link_to("Failed", failed_jobs_path) %>
+<% breadcrumb_items.push @job.id %>
+<%= breadcrumbs %>
+
+<h1><%= @job.class_name %></h1>
+
+<div class="alert alert-danger" role="alert">
+  <h4 class="alert-heading"><%= @job.exception_class %></h4>
+  <p class="font-monospace mb-0">
+    <%= @job.exception_message %>
+  </p>
+</div>
+
+<div class="card" >
+  <div class="card-header">
+    Stacktrace
+  </div>
+  <ul class="list-group list-group-flush font-monospace text-xs">
+    <% @job.stacktrace.each do |trace| %>
+      <li class="list-group-item"><%= trace %></li>
+    <% end %>
+  </ul>
+</div>
