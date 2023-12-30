@@ -6,8 +6,8 @@ Gem::Specification.new do |spec|
   spec.authors     = ["Vincent Rolea"]
   spec.email       = ["3525369+virolea@users.noreply.github.com"]
   spec.homepage    = "https://github.com/virolea/panoptic"
-  spec.summary     = "Web interface for the SoldiQueue queuing backend"
-  spec.description = "Web interface for the SoldiQueue queuing backend"
+  spec.summary     = "Web interface for the SolidQueue queuing backend"
+  spec.description = "Panoptic adds a real time web interface on top of SolidQueue to monitor processes, queues and jobs"
   spec.license     = "MIT"
 
   spec.metadata["homepage_uri"] = spec.homepage
