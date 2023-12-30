@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    panoptic (0.2.0)
+    panoptic (0.3.0)
       pagy (~> 6.2)
       rails (~> 7.1)
       solid_queue (~> 0.1)
