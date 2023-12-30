@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added 
+
+- Add a detailed view for failed jobs ([#6](https://github.com/virolea/panoptic/pull/6))
+
 ## [0.2.0]
 
 ### Added 
