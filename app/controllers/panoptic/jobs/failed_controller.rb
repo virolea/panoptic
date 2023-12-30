@@ -2,6 +2,8 @@
 
 module Panoptic
   class Jobs::FailedController < ApplicationController
+    layout "panoptic/jobs"
+
     def index
       # TODO: use the `failed` scope available in SolidQueue next release
       @pagy, @jobs = pagy(
