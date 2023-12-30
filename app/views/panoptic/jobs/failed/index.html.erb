@@ -1,0 +1,15 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Class</th>
+      <th scope="col">Queue</th>
+      <th scope="col">Exception</th>
+      <th scope="col">Enqueued</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <%= render partial: "job", collection: @jobs %>  
+  </tbody>
+</table>
