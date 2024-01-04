@@ -7,15 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Add Job retries to failed jobs - [kylekeesling](https://github.com/kylekeesling) ([#8](https://github.com/virolea/panoptic/pull/8))
 ## [0.3.0]
 
-### Added 
+### Added
 
 - Add a detailed view for failed jobs ([#6](https://github.com/virolea/panoptic/pull/6))
 
 ## [0.2.0]
 
-### Added 
+### Added
 
 - Jobs filtered views ([#5](https://github.com/virolea/panoptic/pull/5))
 
@@ -23,15 +26,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Improved job time values display and removed job arguments from job index view
 
-## [0.1.3] 
+## [0.1.3]
 
-### Changed 
+### Changed
 
 - Replace kaminari with pagy for pagination purposes
 
 ## [0.1.2]
 
-### Fixed 
+### Fixed
 
 - Remove link to deleted css file from layout
 
