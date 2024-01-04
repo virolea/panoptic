@@ -11,13 +11,8 @@
 
     <%= render "shared/navbar" %>
 
-    <% flash.each do |type, message| %>
-      <div class="alert alert-info mb-3" role="alert">
-        <%= message %>
-      </div>
-    <% end %>
-
     <main class="container mt-2">
+      <%= render "shared/flashes" %>
       <%= content_for?(:content) ? yield(:content) : yield %>
     </main>
 
