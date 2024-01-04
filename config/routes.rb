@@ -3,12 +3,12 @@ Panoptic::Engine.routes.draw do
 
   resources :queues, only: [:index]
 
-  scope "jobs" do
-    get "all", to: "jobs#index", as: "jobs"
+  resources :jobs, only: :index do
+    resource :retry, only: :create, module: :jobs
+  end
 
-    scope module: "jobs" do
-      resources :scheduled, only: :index, as: :scheduled_jobs
-      resources :failed, only: [:index, :show], as: :failed_jobs
-    end
+  scope module: :jobs do
+    resources :scheduled, only: :index, as: :scheduled_jobs
+    resources :failed, only: [:index, :show], as: :failed_jobs
   end
 end
