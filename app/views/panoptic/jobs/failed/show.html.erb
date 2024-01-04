@@ -5,6 +5,8 @@
 
 <h1><%= @job.class_name %></h1>
 
+<%= button_to "Retry Job", job_retry_path(@job), class: "btn btn-primary mb-3" %>
+
 <div class="alert alert-danger" role="alert">
   <h4 class="alert-heading"><%= @job.exception_class %></h4>
   <p class="font-monospace mb-0">

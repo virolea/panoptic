@@ -5,6 +5,9 @@
   <td scope="col" class="font-monospace"><%= job.exception_class %></td>
   <td scope="col"><%= safe_time_tag job.enqueued_at %></td>
   <td scope="col">
-    <%= link_to "Details", failed_job_path(job) %>
+    <%= link_to "Details", failed_job_path(job), class: "btn btn-link" %>
+    <%= button_to "Retry Job", job_retry_path(job),
+          class: "btn btn-link",
+          form_class: "d-inline" %>
   </td>
 </tr>
