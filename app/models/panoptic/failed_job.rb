@@ -3,7 +3,7 @@
 module Panoptic
   class FailedJob < SolidQueue::Job
     # TODO: use the `failed` scope available in SolidQueue next release
-    default_scope { joins(:failed_execution) }
+    default_scope { includes(:failed_execution).where.not(failed_execution: { id: nil }) }
 
     def enqueued_at
       Time.parse(arguments["enqueued_at"])

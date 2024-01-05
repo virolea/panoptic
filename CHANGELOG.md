@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+
+- Fixes N+1 on failed jobs index - [virolea](https://github.com/virolea)
+
 ## [0.4.1]
 
 ### Fixed
