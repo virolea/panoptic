@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.4.1]
+
 ### Fixed
 
 - Remove mail-related code - [virolea](https://github.com/virolea) ([#12](https://github.com/virolea/panoptic/pull/12))
