@@ -9,10 +9,10 @@
   </head>
   <body class="pb-4">
 
-    <%= render "shared/navbar" %>
+    <%= render "shared/panoptic/navbar" %>
 
     <main class="container mt-2">
-      <%= render "shared/flashes" %>
+      <%= render "shared/panoptic/flashes" %>
       <%= content_for?(:content) ? yield(:content) : yield %>
     </main>
 
