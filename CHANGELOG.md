@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.4.2]
+
+### Changed
+
+- Nest shared partials into the panotpic namespace - [@activefx](https://github.com/activefx) ([#15](https://github.com/virolea/panoptic/pull/15))
+- Default sort jobs by descending creation order - [@fractaledmind](https://github.com/fractaledmind) ([#16](https://github.com/virolea/panoptic/pull/16))
+- Default sort scheduled jobs by ascendending scheduling order - [@fractaledmind](https://github.com/fractaledmind) ([#17](https://github.com/virolea/panoptic/pull/17))
+
 ### Fixed
 
 - Fixes N+1 on failed jobs index - [virolea](https://github.com/virolea)
