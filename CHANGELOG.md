@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Support for Bootstrap Sass and Turbo - [virolea](https://github.com/virolea) ([#18](https://github.com/virolea/panoptic/pull/18))
+
 ## [0.4.2]
 
 ### Changed
