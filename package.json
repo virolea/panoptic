@@ -1,0 +1,19 @@
+{
+  "name": "panoptic",
+  "scripts": {
+    "build:css:compile": "sass ./app/assets-dev/stylesheets/application.scss:./app/assets/stylesheets/panoptic/application.css --no-source-map --load-path=node_modules",
+    "build:css:prefix": "postcss ./app/assets/stylesheets/panoptic/application.css --use=autoprefixer --output=./app/assets/stylesheets/panoptic/application.css",
+    "build:css": "yarn build:css:compile && yarn build:css:prefix",
+    "watch:css": "nodemon --watch ./app/assets-dev/stylesheets/ --ext scss --exec \"yarn build:css\""
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "autoprefixer": "^10.4.16",
+    "bootstrap": "^5.3.2",
+    "esbuild": "^0.19.11",
+    "nodemon": "^3.0.2",
+    "postcss": "^8.4.33",
+    "postcss-cli": "^11.0.0",
+    "sass": "^1.69.7"
+  }
+}
