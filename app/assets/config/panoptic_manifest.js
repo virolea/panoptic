@@ -3,4 +3,3 @@
 //= This is how application get loaded through javascript tags
 
 //= link_directory ../builds/panoptic
-//= link_tree ../javascripts

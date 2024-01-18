@@ -9,7 +9,7 @@ module Panoptic
     isolate_namespace Panoptic
 
     initializer "panoptic.assets.precompile" do |app|
-      app.config.assets.precompile += %w[panoptic/application.css panoptic/application.js]
+      app.config.assets.precompile += %w[panoptic_manifest.js]
     end
 
     initializer "panoptic.importmap", before: "importmap" do |app|
