@@ -2,7 +2,6 @@ PATH
   remote: .
   specs:
     panoptic (0.4.2)
-      importmap-rails (~> 2.0)
       pagy (~> 6.2)
       rails (~> 7.1)
       solid_queue (~> 0.1)
@@ -99,10 +98,6 @@ GEM
       activesupport (>= 6.1)
     i18n (1.14.1)
       concurrent-ruby (~> 1.0)
-    importmap-rails (2.0.1)
-      actionpack (>= 6.0.0)
-      activesupport (>= 6.0.0)
-      railties (>= 6.0.0)
     io-console (0.7.1)
     irb (1.11.0)
       rdoc
