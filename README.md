@@ -54,12 +54,10 @@ http://localhost:3000/panoptic
 #### CSS
 Panoptic uses Bootstrap 5 for its styles. For ease of integration, Bootstrap's Sass is compiled and checked out in version control locally. This removes the dependency on NodeJS for host applications.
 
-New CSS must be added to the `app/assets-dev/stylesheets` directory. If your run the UI through the `bin/dev` command above, changes to the files in `assets-dev` will be automatically picked up and compiled in the main stylesheet located at `app/assets/stylesheets/panoptic/application.css`. Otherwise, the `yarn build:css` command needs to be run to reflect changes in CSS.
-
-The development experience on that matter will probably be improved in the futre, to remove the need to checkout the compiled CSS file, and only do it when releasing a new version of the gem.
+New CSS must be added to the `app/assets/stylesheets/panopitc` directory. If your run the UI through the `bin/dev` command above, changes to the files in `assets` will be automatically picked up and compiled in the main stylesheet located at `app/assets/builds/panoptic/application.css`. Otherwise, the `yarn build:css` command needs to be run to reflect changes in CSS.
 
 #### Javascript
-Panoptic uses importmaps throught the [importmap-rails](https://github.com/rails/importmap-rails) gem for its Javascript code. Javascript code is located in the `app/assets/javascripts/panoptic` folder.
+Panoptic uses esbuild to compile its Javascript code. Javascript code is located in the `app/assets/javascripts/panoptic` folder.
 
 ## Usage
 
