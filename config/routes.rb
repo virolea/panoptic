@@ -9,6 +9,6 @@ Panoptic::Engine.routes.draw do
 
   scope :jobs, module: :jobs do
     resources :scheduled, only: :index, as: :scheduled_jobs
-    resources :failed, only: [:index, :show], as: :failed_jobs
+    resources :failed, only: [:index, :show, :destroy], as: :failed_jobs
   end
 end

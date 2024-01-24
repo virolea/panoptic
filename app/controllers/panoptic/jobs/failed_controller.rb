@@ -13,5 +13,16 @@ module Panoptic
     def show
       @job = Panoptic::FailedJob.find(params[:id])
     end
+
+    def destroy
+      @job = Panoptic::FailedJob.find(params[:id])
+      if @job.destroy
+        redirect_back fallback_location: failed_jobs_path,
+                      notice: "Job was successfully deleted."
+      else
+        redirect_back fallback_location: failed_jobs_path,
+                      alert: @job.errors.full_messages.to_sentence
+      end
+    end
   end
 end
