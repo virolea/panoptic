@@ -21,5 +21,5 @@ Gem::Specification.new do |spec|
   spec.add_dependency "rails", ">= 7.1", "< 9.0"
   spec.add_dependency "solid_queue", "~> 0.1"
   spec.add_dependency "pagy", "~> 6.2"
-  spec.add_dependency "turbo-rails", "~> 1.5"
+  spec.add_dependency "turbo-rails", ">= 1.5", "< 3.0"
 end
