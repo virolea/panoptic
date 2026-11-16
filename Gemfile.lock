@@ -5,7 +5,7 @@ PATH
       pagy (~> 6.2)
       rails (>= 7.1, < 9.0)
       solid_queue (~> 0.1)
-      turbo-rails (~> 1.5)
+      turbo-rails (>= 1.5, < 3.0)
 
 GEM
   remote: https://rubygems.org/
@@ -209,10 +209,9 @@ GEM
     thor (1.5.0)
     timeout (0.6.1)
     tsort (0.2.0)
-    turbo-rails (1.5.0)
-      actionpack (>= 6.0.0)
-      activejob (>= 6.0.0)
-      railties (>= 6.0.0)
+    turbo-rails (2.0.23)
+      actionpack (>= 7.1.0)
+      railties (>= 7.1.0)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
     uri (1.1.2)
